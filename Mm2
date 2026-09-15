@@ -1,4 +1,4 @@
---  Quantum Hub  | Murder Mystery 2 v2.0 | Owner: SUN GOD NIKA X  AhmadDev
+--  Nova Hub X  | Murder Mystery 2 v2.0 | Owner: SUN GOD NIKA X  AhmadDev
 
 local getgenv = getgenv or function()
     return _G
@@ -62,7 +62,7 @@ local function createAfkDisplay(character)
             local h = math.floor(e / 3600)
             local m = math.floor((e % 3600) / 60)
             local s = e % 60
-            label.Text = string.format("Quantum ANTI-AFK [%02d:%02d:%02d]", h, m, s)
+            label.Text = string.format("Nova ANTI-AFK [%02d:%02d:%02d]", h, m, s)
             task.wait(1)
         end
     end)
@@ -145,7 +145,7 @@ local function setHighlight(player, color, enabled)
     local h = highlights[player]
     if not h or not h.Parent then
         h = Instance.new("Highlight")
-        h.Name = "Quantum_ESP"
+        h.Name = "Nova_ESP"
         h.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
         h.FillTransparency = 0.5
         h.OutlineTransparency = 0
@@ -387,9 +387,9 @@ end)
 local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
 
 local Window = WindUI:CreateWindow({
-    Title = "Quantum Hub ",
+    Title = "Nova Hub x ",
     Author = "Murder Mystery 2",
-    Folder = "Quantum_MM2",
+    Folder = "Nova_MM2",
     Size = UDim2.fromOffset(580, 520),
     Transparent = true,
     Theme = "Red"
@@ -571,18 +571,18 @@ CreditsTab:Button({
     Title = "Discord Server Link",
     Callback = function()
         pcall(function()
-            setclipboard("https://discord.gg/XGCVTPn5fh")
+            setclipboard("https://discord.gg/qMNukuX4vd")
         end)
         WindUI:Notify({
-            Title = "Credits",
-            Content = "Owner name copied!",
+            Title = "discord link done",
+            Content = "server link copied!",
             Duration = 2
         })
     end
 })
 
 WindUI:Notify({
-    Title = "Quantum Hub",
+    Title = "Nova Hub X",
     Content = "Murder Mystery 2 v2.0 loaded",
     Duration = 4
 })
